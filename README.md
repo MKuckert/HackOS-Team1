@@ -42,16 +42,16 @@ POST /documentation/machine/$MACHINE_ID
     "constructed_by": "$USER",
     "construction_order": [
         {
-            "object_part": "$PART_ID",
+            "object_part": "$PART_ID"
         },
         {
-            "object_part": "$PART_ID",
+            "object_part": "$PART_ID"
         },
         {
-            "object_part": "$PART_ID",
+            "object_part": "$PART_ID"
         },
         {
-            "object_part": "$PART_ID",
+            "object_part": "$PART_ID"
         }
     ]
 }
@@ -65,17 +65,21 @@ GET /documentation/machine/$MACHINE_ID
     "constructed_by": "...",
     "construction_order": [
         {
-            "object_part": "$PART_ID",
+            "object_part": "$PART_ID"
         },
         {
-            "object_part": "$PART_ID",
+            "object_part": "$PART_ID"
         },
         {
-            "object_part": "$PART_ID",
+            "object_part": "$PART_ID"
         },
         {
-            "object_part": "$PART_ID",
+            "object_part": "$PART_ID"
         }
     ]
 }
 ```
+
+### HIGH STABLE API SERVER :) 
+
+https://rbe.dev.bitnamic.net/api/

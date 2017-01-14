@@ -1,0 +1,17 @@
+{
+  "apps" : [{
+    "name"        : "HACKOS",
+    "script"      : "./server/app.js",
+    "watch"       : true,
+    "ignore_watch" : ["logs","node_modules"],
+
+    "env": {
+      "NODE_ENV": "development",
+      "PORT":"61238"
+    },
+    "error_file"      : "/var/log/nodejs/HACKOS.dev.err.log",
+    "out_file"        : "/var/log/nodejs/HACKOS.dev.out.log",
+    "merge_logs"      : true,
+    "log_date_format" : "YYYY-MM-DD HH:mm Z"    
+  }]
+}
