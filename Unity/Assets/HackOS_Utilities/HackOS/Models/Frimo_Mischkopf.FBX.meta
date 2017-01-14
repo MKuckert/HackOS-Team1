@@ -1,0 +1,171 @@
+fileFormatVersion: 2
+guid: 18664112be3f20a4a81dbcf9cda42943
+timeCreated: 1484339464
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Aufgeschnitten
+    100002: Dummy001
+    100004: //RootNode
+    100006: gaus422Bayuo-none-DC_Brep
+    100008: gaus422Bayuo-none-DC_Brep 1
+    100010: gaus422Bayuo-none-DC_Brep 2
+    100012: gaus422Bayuo-none-DC_Brep 3
+    100014: gaus422Bayuo-none-DC_Brep 4
+    100016: gaus422Bayuo-none-DC_Brep 5
+    100018: gaus422Bayuo-none-DC_Brep 6
+    100020: gaus422Bayuo-none-DC_Brep001
+    100022: gaus422Bayuo-none-DC_Brep002
+    100024: gaus422Bayuo-none-DC_Brep003
+    100026: gaus422Bayuo-none-DC_Brep004
+    100028: gaus422Bayuo-none-DC_Brep005
+    100030: Nadel
+    100032: teil
+    100034: Zylinder001
+    100036: Zylinder002
+    100038: Zylinder003
+    400000: Aufgeschnitten
+    400002: Dummy001
+    400004: //RootNode
+    400006: gaus422Bayuo-none-DC_Brep
+    400008: gaus422Bayuo-none-DC_Brep 1
+    400010: gaus422Bayuo-none-DC_Brep 2
+    400012: gaus422Bayuo-none-DC_Brep 3
+    400014: gaus422Bayuo-none-DC_Brep 4
+    400016: gaus422Bayuo-none-DC_Brep 5
+    400018: gaus422Bayuo-none-DC_Brep 6
+    400020: gaus422Bayuo-none-DC_Brep001
+    400022: gaus422Bayuo-none-DC_Brep002
+    400024: gaus422Bayuo-none-DC_Brep003
+    400026: gaus422Bayuo-none-DC_Brep004
+    400028: gaus422Bayuo-none-DC_Brep005
+    400030: Nadel
+    400032: teil
+    400034: Zylinder001
+    400036: Zylinder002
+    400038: Zylinder003
+    2300000: Aufgeschnitten
+    2300002: gaus422Bayuo-none-DC_Brep
+    2300004: gaus422Bayuo-none-DC_Brep 1
+    2300006: gaus422Bayuo-none-DC_Brep 2
+    2300008: gaus422Bayuo-none-DC_Brep 3
+    2300010: gaus422Bayuo-none-DC_Brep 4
+    2300012: gaus422Bayuo-none-DC_Brep 5
+    2300014: gaus422Bayuo-none-DC_Brep 6
+    2300016: gaus422Bayuo-none-DC_Brep001
+    2300018: gaus422Bayuo-none-DC_Brep002
+    2300020: gaus422Bayuo-none-DC_Brep003
+    2300022: gaus422Bayuo-none-DC_Brep004
+    2300024: gaus422Bayuo-none-DC_Brep005
+    2300026: Nadel
+    2300028: teil
+    2300030: Zylinder001
+    2300032: Zylinder002
+    2300034: Zylinder003
+    3300000: Aufgeschnitten
+    3300002: gaus422Bayuo-none-DC_Brep
+    3300004: gaus422Bayuo-none-DC_Brep 1
+    3300006: gaus422Bayuo-none-DC_Brep 2
+    3300008: gaus422Bayuo-none-DC_Brep 3
+    3300010: gaus422Bayuo-none-DC_Brep 4
+    3300012: gaus422Bayuo-none-DC_Brep 5
+    3300014: gaus422Bayuo-none-DC_Brep 6
+    3300016: gaus422Bayuo-none-DC_Brep001
+    3300018: gaus422Bayuo-none-DC_Brep002
+    3300020: gaus422Bayuo-none-DC_Brep003
+    3300022: gaus422Bayuo-none-DC_Brep004
+    3300024: gaus422Bayuo-none-DC_Brep005
+    3300026: Nadel
+    3300028: teil
+    3300030: Zylinder001
+    3300032: Zylinder002
+    3300034: Zylinder003
+    4300000: gaus422Bayuo-none-DC_Brep005
+    4300002: gaus422Bayuo-none-DC_Brep004
+    4300004: Zylinder003
+    4300006: Zylinder002
+    4300008: Zylinder001
+    4300010: gaus422Bayuo-none-DC_Brep
+    4300012: gaus422Bayuo-none-DC_Brep003
+    4300014: gaus422Bayuo-none-DC_Brep002
+    4300016: gaus422Bayuo-none-DC_Brep001
+    4300018: Aufgeschnitten
+    4300020: gaus422Bayuo-none-DC_Brep
+    4300022: gaus422Bayuo-none-DC_Brep
+    4300024: gaus422Bayuo-none-DC_Brep
+    4300026: gaus422Bayuo-none-DC_Brep
+    4300028: Nadel
+    4300030: gaus422Bayuo-none-DC_Brep
+    4300032: gaus422Bayuo-none-DC_Brep
+    4300034: teil
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
