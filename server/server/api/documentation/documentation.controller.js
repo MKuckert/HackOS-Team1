@@ -34,6 +34,7 @@ exports.create = function(req, res) {
   if(typeof id !== "string" || id.length===0) {
     return res.status(418).json({error: "expected GET parameter :id to be a non-empty string"});
   }
+  console.log(typeof req.body);
   if(typeof req.body !== "object") {
     return res.status(418).json({error: "expected object as body"});
   }
