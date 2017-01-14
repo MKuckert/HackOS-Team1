@@ -37,14 +37,18 @@ exports.create = function(req, res) {
   if(typeof req.body !== "object") {
     return res.status(418).json({error: "expected object as body"});
   }
+  console.log(req.body);
+
+  
 
   var constructedBy = req.body.constructed_by || '';
   var constructionOrder = req.body.construction_order || [];
   var validatedOrder = [];
-  if(typeof constructedBy !== "string" || constructedBy.length===0) {
+  if(typeof constructedBy !== "string" || constructedBy === '') {
     return res.status(418).json({error: "expected constructed_by to be a non-empty string"});
   }
-  if(constructionOrder instanceof Array || constructionOrder.length===0) {
+  console.log(constructionOrder);
+  if(!(constructionOrder instanceof Array) || constructionOrder.length===0) {
     return res.status(418).json({error: "expected construction_order to be a non-empty array"});
   }
   for (var i = constructionOrder.length - 1; i >= 0; i--) {
@@ -62,7 +66,7 @@ exports.create = function(req, res) {
   };
   machineDocumentations[id] = doc;
   console.log(doc);
-  res.status(204);
+  res.sendStatus(204);
 };
 
 // Updates an existing documentation in the DB.
