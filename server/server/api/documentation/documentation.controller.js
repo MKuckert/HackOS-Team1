@@ -14,45 +14,55 @@ exports.index = function(req, res) {
 
 // Get a single documentation
 exports.show = function(req, res) {
-   var id = req.params.id;
-   console.log(req.params.id);
-   return res.json(machineDocumentations[id]);
+  var id = req.params.id || '';
+
+  if(typeof id !== "string" || id.length===0) {
+    return res.status(418).json({error: "expected GET parameter :id to be a non-empty string"});
+  }
+  var doc = machineDocumentations[id] || null;
+  if(typeof id !== "object" || doc===null) {
+    return res.status(418).json({error: "documentation with given id not found"});
+  }
+  
+  return res.json(doc);
 };
 
 // Creates a new documentation in the DB.
 exports.create = function(req, res) {
-  var id = req.params.id;
-  console.log(req.params.id);
+  var id = req.params.id || '';
 
+  if(typeof id !== "string" || id.length===0) {
+    return res.status(418).json({error: "expected GET parameter :id to be a non-empty string"});
+  }
   if(typeof req.body !== "object") {
-    return res.sendStatus(418).json({error: "expected object as body"});
+    return res.status(418).json({error: "expected object as body"});
   }
 
   var constructedBy = req.body.constructed_by || '';
   var constructionOrder = req.body.construction_order || [];
   var validatedOrder = [];
   if(typeof constructedBy !== "string" || constructedBy.length===0) {
-    return res.sendStatus(418).json({error: "expected constructed_by to be a non-empty string"});
+    return res.status(418).json({error: "expected constructed_by to be a non-empty string"});
   }
   if(typeof constructionOrder !== "array" || constructionOrder.length===0) {
-    return res.sendStatus(418).json({error: "expected construction_order to be a non-empty array"});
+    return res.status(418).json({error: "expected construction_order to be a non-empty array"});
   }
   for (var i = constructionOrder.length - 1; i >= 0; i--) {
     var objectPart = constructionOrder[i].object_part || null;
     if(typeof objectPart !== "string" || objectPart.length===0) {
-      return res.sendStatus(418).json({error: "expected construction_order[*].object_part to be a non-empty string"});
+      return res.status(418).json({error: "expected construction_order[*].object_part to be a non-empty string"});
     }
     validatedOrder.push({object_part: objectPart});
   }
 
   var doc = {
     constructed_by: constructedBy,
-    constructed_at: new Date()
+    constructed_at: new Date(),
     construction_order: validatedOrder
   };
   machineDocumentations[id] = doc;
   console.log(doc);
-  res.sendStatus(204);
+  res.status(204);
 };
 
 // Updates an existing documentation in the DB.
