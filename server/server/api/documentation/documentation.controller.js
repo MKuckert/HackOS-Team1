@@ -19,8 +19,9 @@ exports.show = function(req, res) {
   if(typeof id !== "string" || id.length===0) {
     return res.status(418).json({error: "expected GET parameter :id to be a non-empty string"});
   }
+
   var doc = machineDocumentations[id] || null;
-  if(typeof id !== "object" || doc===null) {
+  if(!doc) {
     return res.status(418).json({error: "documentation with given id not found"});
   }
   
@@ -37,7 +38,6 @@ exports.create = function(req, res) {
   if(typeof req.body !== "object") {
     return res.status(418).json({error: "expected object as body"});
   }
-  console.log(req.body);
 
   
 
@@ -47,7 +47,6 @@ exports.create = function(req, res) {
   if(typeof constructedBy !== "string" || constructedBy === '') {
     return res.status(418).json({error: "expected constructed_by to be a non-empty string"});
   }
-  console.log(constructionOrder);
   if(!(constructionOrder instanceof Array) || constructionOrder.length===0) {
     return res.status(418).json({error: "expected construction_order to be a non-empty array"});
   }
@@ -65,7 +64,6 @@ exports.create = function(req, res) {
     construction_order: validatedOrder
   };
   machineDocumentations[id] = doc;
-  console.log(doc);
   res.sendStatus(204);
 };
 
