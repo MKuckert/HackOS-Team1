@@ -34,7 +34,6 @@ exports.create = function(req, res) {
   if(typeof id !== "string" || id.length===0) {
     return res.status(418).json({error: "expected GET parameter :id to be a non-empty string"});
   }
-  console.log(typeof req.body);
   if(typeof req.body !== "object") {
     return res.status(418).json({error: "expected object as body"});
   }
@@ -45,7 +44,7 @@ exports.create = function(req, res) {
   if(typeof constructedBy !== "string" || constructedBy.length===0) {
     return res.status(418).json({error: "expected constructed_by to be a non-empty string"});
   }
-  if(typeof constructionOrder !== "array" || constructionOrder.length===0) {
+  if(constructionOrder instanceof Array || constructionOrder.length===0) {
     return res.status(418).json({error: "expected construction_order to be a non-empty array"});
   }
   for (var i = constructionOrder.length - 1; i >= 0; i--) {
