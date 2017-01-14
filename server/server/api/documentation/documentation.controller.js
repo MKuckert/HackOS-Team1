@@ -3,6 +3,8 @@
 var _ = require('lodash');
 var Documentation = require('./documentation.model');
 
+
+
 // Get list of documentations
 exports.index = function(req, res) {
   Documentation.find(function (err, documentations) {
@@ -22,10 +24,13 @@ exports.show = function(req, res) {
 
 // Creates a new documentation in the DB.
 exports.create = function(req, res) {
-  Documentation.create(req.body, function(err, documentation) {
+  /*Documentation.create(req.body, function(err, documentation) {
     if(err) { return handleError(res, err); }
     return res.status(201).json(documentation);
-  });
+  });*/
+  console.log(req.body);
+  res.sendStatus(204);
+
 };
 
 // Updates an existing documentation in the DB.

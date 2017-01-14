@@ -2,6 +2,26 @@
 
 var _ = require('lodash');
 var Instruction = require('./instruction.model');
+var instructions = {
+    "instructions": [
+        {
+            "object_part": "$PART_ID",
+            "textual_instruction": "..."
+        },
+        {
+            "object_part": "$PART_ID",
+            "textual_instruction": "..."
+        },
+        {
+            "object_part": "$PART_ID",
+            "textual_instruction": "..."
+        },
+        {
+            "object_part": "$PART_ID",
+            "textual_instruction": "..."
+        }
+    ]
+};
 
 // Get list of instructions
 exports.index = function(req, res) {
@@ -13,11 +33,12 @@ exports.index = function(req, res) {
 
 // Get a single instruction
 exports.show = function(req, res) {
-  Instruction.findById(req.params.id, function (err, instruction) {
+  /*Instruction.findById(req.params.id, function (err, instruction) {
     if(err) { return handleError(res, err); }
     if(!instruction) { return res.status(404).send('Not Found'); }
     return res.json(instruction);
-  });
+  });*/
+  return res.json(instructions);
 };
 
 // Creates a new instruction in the DB.
