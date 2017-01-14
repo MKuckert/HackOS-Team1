@@ -5,20 +5,20 @@ var Instruction = require('./instruction.model');
 var instructions = {
     "instructions": [
         {
-            "object_part": "$PART_ID",
-            "textual_instruction": "..."
+            "object_part": "feder1",
+            "textual_instruction": "Bitte die Feder 1 aus dem Fach 43i5 entnehmen und in den Grundkörper einsetzen."
         },
         {
-            "object_part": "$PART_ID",
-            "textual_instruction": "..."
+            "object_part": "feder2",
+            "textual_instruction": "Bitte die Feder 2 aus dem Fach 87d2 entnehmen und in den Grundkörper einsetzen."
         },
         {
-            "object_part": "$PART_ID",
-            "textual_instruction": "..."
+            "object_part": "greiferteil1",
+            "textual_instruction": "Bitte einen Greifer-Teil aus dem Fach 3234 entnehmen und an den Grundkörper anbringen."
         },
         {
-            "object_part": "$PART_ID",
-            "textual_instruction": "..."
+            "object_part": "greiferteil2",
+            "textual_instruction": "Bitte einen Greifer-Teil aus dem Fach 3234 entnehmen und an den Grundkörper anbringen."
         }
     ]
 };
@@ -38,6 +38,10 @@ exports.show = function(req, res) {
     if(!instruction) { return res.status(404).send('Not Found'); }
     return res.json(instruction);
   });*/
+
+  instructions.instructions = instructions.instructions.sort(function(a, b) {
+    return Math.round(Math.random()*2-1);
+  });
   return res.json(instructions);
 };
 
