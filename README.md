@@ -79,3 +79,7 @@ GET /documentation/machine/$MACHINE_ID
     ]
 }
 ```
+
+### HIGH STABLE API SERVER :) 
+
+https://rbe.dev.bitnamic.net/
