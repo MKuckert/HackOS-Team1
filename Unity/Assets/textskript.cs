@@ -23,7 +23,7 @@ public class textskript : MonoBehaviour {
 
     IEnumerator GetText()
     {
-        UnityWebRequest www = UnityWebRequest.Get("https://jsonplaceholder.typicode.com/posts/1");
+        UnityWebRequest www = UnityWebRequest.Get("https://rbe.dev.bitnamic.net/api/instructions/hackos-team1");
         yield return www.Send();
 
         if (www.isError)
@@ -36,7 +36,7 @@ public class textskript : MonoBehaviour {
             Debug.Log(www.downloadHandler.text);
             //t.text = www.downloadHandler.text;
             var N = JSON.Parse(www.downloadHandler.text);
-            t.text = N["title"];
+            t.text = N["instructions"][0]["textual_instruction"];
 
             // Or retrieve results as binary data
             byte[] results = www.downloadHandler.data;
